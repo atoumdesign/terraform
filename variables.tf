@@ -6,10 +6,10 @@ variable "resource" {
 }
 
 variable "generals" {
-  type = map(object({
+  type = object({
     application = string
     location = string
-  }))
+  })
 }
 
 variable "tags" {
