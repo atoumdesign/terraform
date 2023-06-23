@@ -29,23 +29,4 @@ variable "location" {
 
 variable "environment" {
   type = string
-
-  validation {
-    condition = contains([
-        "prd",
-        "dev",
-        "hml",
-        "qas",
-        "tst",
-        "trn",
-        "lab",
-        "nprd",
-        "shd",
-        "sbx",
-        "poc",
-        "dvt"
-        ], var.environment)
-
-    error_message = "Only environments are allowed"
-  }
 }
