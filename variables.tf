@@ -1,4 +1,4 @@
-variable "resource_group" {
+variable "resource" {
   type = map(object({
     name = string
     number = string
